@@ -214,16 +214,17 @@ span{
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    text-align: right;
+    text-align: left;
     justify-content: center;
     margin-top: 3rem;
 }
 
 .goals-content h1{
-    font-size: 14rem; /* Reduced from 14rem to 7rem */
+    font-size: 7rem; /* Reduced from 14rem to 7rem */
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
+    color: #3fb5f5;
 }
 .goals-img{
     border-radius: 50%;
@@ -248,9 +249,7 @@ span{
     line-height: 1.8;
     max-width: 1000px;
 }
-.goals-content p, .goals-content p {
-    line-height: 2; /* Adjust the value to your preference */
-}
+
 
 .login{
     background-color: var(--bg-color);
@@ -434,6 +433,24 @@ span{
         margin: 0 auto;
     }
     .about-img img{
+        width: 56vw;
+    }
+    .goals{
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+    }
+    .goals-content h3{
+        font-size: 2.6rem;
+    }
+    .goals-content h1{
+        font-size: 8rem;
+        margin-top: 3rem;
+    }
+    .goals-content p{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .goals-img img{
         width: 56vw;
     }
     .skills h2{
