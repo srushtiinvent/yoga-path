@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srushti Nerkar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo"><span>Yoga Path</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#about" class="active">About</a>
+            <a href="#goals">Goals</a>
+            <a href="#login">Login</a>
+        </nav>
+    </header>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h1>Hi, It's <span>Yoga Path</span></h1>
+            <p>Your personalized yoga journey starts here! Choose your goals—mental health, fitness, or overall well-being—and discover tailored yoga plans designed just for you. Transform your mind and body with ease!</p>
+    
+        </div>
+
+        <div class="about-img">
+            <img src="yoga1.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="goals" id="goals">
+        <div class="mental health">
+            <h1> Mental Health</h1>
+            <p> Yoga is a powerful practice for enhancing mental health, offering a blend of physical postures, mindful breathing, and meditation that promotes emotional well-being. It helps reduce stress and anxiety by calming the nervous system and increasing the production of mood-boosting neurotransmitters like serotonin. Regular yoga practice improves focus, reduces symptoms of depression, and enhances overall resilience to life’s challenges. By fostering a deeper mind-body connection, yoga encourages self-awareness, inner peace, and a sense of balance, making it an effective tool for nurturing mental and emotional wellness.            </p>
+        </div>
+        <div class="about-img">
+            <img src="mental_health.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="login" id="login">
+        <h2 class="heading"> <span>Login</span></h2>
+    
+        <form onsubmit="sendMail(event)">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Full-name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="phone" placeholder="Phone Number" required>
+                    <div class="input-box">
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <i class='bx bx-hide' id="togglePassword"></i>
+                     </div>
+                     
+                </div>
+            </div>
+    
+            <div class="input-group-2">
+                <textarea name="message" cols="30" rows="10" placeholder="About You" required></textarea>
+                <input type="submit" value=" Login" class="btn">
+            </div>
+        </form>
+    </section>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
